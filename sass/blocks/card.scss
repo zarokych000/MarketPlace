@@ -1,0 +1,138 @@
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  height: 12.3rem;
+  width: 30rem; 
+
+  &--matherial {
+    position: relative;
+    overflow: hidden;
+    background: #ffbf47;
+  }
+
+  &--tool {
+    background: #3bbce3;
+  }
+
+  &--tech {
+    background: #dc91d8;
+  }
+
+  &--promote {
+    background: #8ed78f;
+    position: relative;
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  &--delivery{
+    background: #ffc047;
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+
+
+.card__wrapper{
+  margin-left: 2.1rem;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.card__text{
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-top: 2rem;
+
+  &--promote {
+
+    &::after {
+      content: '50%';
+      position: absolute;
+      left: 11rem;
+    } 
+    
+  }
+}
+
+.card__link{
+  transition: all 0.2s;
+  width: 13.5rem;
+  height: 3.8rem;
+  margin-top: 2rem;
+
+  font-size: 1.4rem;
+  color: white;
+
+  border: none;
+
+  transition: all 0.3s;
+
+  &--matherial{
+    background: #e5ac40;
+
+    &:hover{
+      background: #c99738;
+    }
+
+    &:focus{
+      background: #b08532;
+    }
+  }
+  
+  &--tool{
+    background: #35a9cc;
+
+    &:hover{
+      background: #2b8aa7;
+    }
+
+    &:active{
+      background: #26768f;
+    }
+
+  }
+
+  &--tech{
+    background: #c682c2;
+
+    &:hover{
+      background: #956392;
+    }
+
+    &:focus{
+      background: #7a5178;
+    }
+  }
+
+  &--promote{
+    background: #80c180;
+
+    &:hover{
+      background: rgb(93, 141, 93);
+    }
+
+    &:focus{
+      background: rgb(90, 136, 90);
+    }
+  }
+  
+  &--delivery{
+    background: #e5ac40;
+
+    &:hover{
+      background:#af8331;
+    }
+
+    &:focus{
+      background: #8d6b27;
+    }
+  }
+}
+
+
+.card__image-wrapper{
+  @include flex(center, center);
+  width: 100%;
+}

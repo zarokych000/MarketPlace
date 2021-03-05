@@ -1,0 +1,70 @@
+.information {
+  padding: 8rem 0;
+  font-size: 1.5rem;
+}
+
+.information__wrapper{
+  width: 94rem;
+  margin: auto;
+
+  @include flex(stretch, space-between)
+}
+
+
+.information__company{
+  font-size: 1.6rem;
+}
+
+.information__title{
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+
+.information__description{
+  margin-top: 3.4rem;
+}
+
+.information__delivery{
+  margin-top: 2.7rem;
+}
+
+.information__partners{
+  margin-top: 3rem;
+}
+
+.information__partner{
+  position: relative;
+  font-weight: 700;
+  margin-left: 2.8rem;
+  font-size: 1.9rem;
+  padding: 1rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2.3rem;
+    top: 50%;
+    left: -3rem;
+    height: 0.2rem;
+    background: $red;
+  }
+  
+}
+
+
+.information__contacts{
+  font-size: 1.6rem;
+  flex: 0 1 30rem;
+}
+
+.information__contacts-title{
+  font-size: 3.2rem;
+}
+
+.information__contacts-description{
+  margin-top: 3.4rem;
+}
+
+.information__contacts-map{
+  margin-top: 2.7rem;
+}

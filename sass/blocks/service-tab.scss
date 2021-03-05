@@ -1,0 +1,33 @@
+.service-tab__content{
+  display: flex;
+  margin-left: 8rem;
+}
+
+.service-tab__text{
+  width: 42rem;
+}
+
+.service-tab__text h4{
+  font-size: 3.6rem;
+  color: #32425C;
+}
+
+.service-tab__text p{
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 2rem;
+  line-height: 2.2rem;
+  z-index: 10;
+}
+
+.service-tab__image{
+  width: 48rem;
+  position: absolute;
+  right: 0;
+  top: 26%;
+}
+
+.service-tab__image img{
+  width: 100%;
+}

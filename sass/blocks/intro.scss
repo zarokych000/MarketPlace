@@ -1,0 +1,79 @@
+.intro {
+  @include flex(stretch, space-between);
+  width: 90rem;
+  margin: 0 auto;
+  margin-top: 2.6rem;
+}
+
+.intro__description{
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  color: $red;
+}
+
+.intro__contact{
+  @include flex(center, flex-start, column)
+}
+
+.intro__content{
+  @include flex(center, space-between);
+  width: 24rem;
+  height: 4rem;
+  font-size: 2.1rem;
+  border: 3px solid white;
+  padding: 8px;
+
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.intro__phone{
+  font-weight: bold;
+  padding-right: 3rem;
+  color: $red;
+  text-decoration: none;
+}
+
+.intro__control{
+  @include flex(stretch, center);
+
+}
+
+.intro__login{
+  background: white;
+  width: 12.1rem;
+  @include flex(center, center);
+  margin-right: 1rem;
+  max-height: 4rem;
+  font-size: 2.1rem;
+  transition: all 0.3s;
+  
+  &:hover{
+    color: red;
+    .icon{
+      fill: #32425c;
+    }
+  }
+}
+
+.intro__login-text{
+  padding-left: 11px;
+
+}
+
+.intro__registration{
+  width: 15rem;
+  background: white;
+  max-height: 4rem;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 2.1rem;
+  transition: all 0.3s;
+
+  &:hover{
+    color: red;
+  }
+}

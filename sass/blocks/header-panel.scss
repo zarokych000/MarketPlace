@@ -1,0 +1,20 @@
+.header-panel{
+  background-color: $darkBackground;
+}
+
+.header-panel__wrapper{
+  @include flex(stretch, space-between);
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.header-panel__nav{
+  width: 940px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 4.3rem;
+  background-color: $darkBackground;
+}

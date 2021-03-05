@@ -1,0 +1,52 @@
+.search {
+  width: 31rem;
+  @include flex(center);
+  background-color: inherit;
+  transition: all 0.3s;
+  &:hover {
+    background: white;
+
+    .search__input {
+      background: white;
+      font-size: 18px;
+    }
+
+    .search__label {
+      .icon {
+        fill: red;
+      }
+    }
+  }
+
+}
+
+.search__label {
+  margin: 0 1.4rem;
+
+  .icon{
+    height: 28px;
+    width: 28px;
+  }
+}
+
+.search__input {
+  max-width: 22rem;
+  width: 100%;
+  align-self: stretch;
+  background-color: #293449;
+  border: none;
+  transition: all 0.3s;
+
+  &:hover {
+    background: white;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.267);
+    font-size: 1.7rem;
+  }
+
+  &:focus{
+    outline: none;
+  }
+}

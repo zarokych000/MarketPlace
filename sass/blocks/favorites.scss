@@ -1,0 +1,35 @@
+.favourites {
+  @include flex(center);
+  width: 100%;
+  max-width: 15rem;
+  padding-left: 10px;
+  transition: all 0.3s;
+
+  .icon{
+    height: 20px;
+    width: 20px;
+  }
+
+  &:hover {
+    background: darken($color: #293449, $amount: 5%);
+    & > .icon {
+      fill: white;
+    }
+  }
+
+  &:active {
+    color: #b8b9bb;
+    background: darken($color: #293449, $amount: 10%);
+    & > .icon {
+      fill: #8b8e94;
+    }
+  }
+}
+
+.favourites__text{
+  padding-left: 1.1rem;
+}
+
+.favourites__count{
+  padding-left: 0.2rem;
+}

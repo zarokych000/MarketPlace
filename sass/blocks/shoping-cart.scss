@@ -1,0 +1,30 @@
+.shopping-cart{
+  width: 100%;
+  max-width: 15rem;
+  padding-left: 10px;
+  @include flex(center);
+
+  .icon{
+    height: 22px;
+    width: 22px;
+  }
+
+  &:hover{
+    background-color: darken($color: #293449, $amount: 5%);
+    & > .icon {
+      fill: white;
+    }
+  }
+
+  &:active {
+    color: #b8b9bb;
+    background: darken($color: #293449, $amount: 10%);
+    & > .icon {
+      fill: #8b8e94;
+    }
+  }
+}
+
+.shopping-cart__text{
+  padding-left: 1.1rem;
+}

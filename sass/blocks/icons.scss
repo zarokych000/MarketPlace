@@ -1,0 +1,35 @@
+.icon{
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #6a7180;
+  transition: all 0.3s;
+
+  &--buy {
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: #92c178;
+    position: absolute;
+    left: 1.5rem;
+    top: 55%;
+    transform: translateY(-50%);
+  }
+
+  &--footer {
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: #212a3a;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    &:hover {
+      fill: red;
+    }
+
+  }
+
+
+}
+
+.cart-back {
+  fill: red;
+}

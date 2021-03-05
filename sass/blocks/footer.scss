@@ -1,0 +1,41 @@
+.footer{
+  background: #32425c;
+}
+
+.footer__wrapper{
+  width: 94rem;
+  margin: auto;
+
+  &--bottom {
+    width: 94rem;
+    margin: auto;
+    color: white;
+    @include flex(stretch, space-between);
+    padding: 3rem 0;
+    font-size: 1.4rem;
+  }
+
+}
+
+.footer__nav{
+  padding: 0.7rem 0;
+  @include flex(center, space-between);
+}
+
+.footer__subnav{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  @include flex(stretch, space-between);
+}
+
+.footer__bottom{
+  background: #293449;
+}
+
+.footer__social{
+  @include flex;
+}
+
+.footer__author{
+  flex: 0 1 35rem;
+}

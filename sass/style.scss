@@ -1,0 +1,47 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(320px, auto) minmax(1000px, auto) auto ;
+}
+
+@import './blocks/header';
+@import './blocks/header-panel';
+@import './blocks/logo';
+@import './blocks/search';
+@import './blocks/icons';
+@import './blocks/favorites';
+@import './blocks/shoping-cart';
+@import './blocks/buttons';
+@import './blocks/intro';
+@import './blocks/links';
+@import './blocks/card-gallery';
+@import './blocks/card';
+@import './blocks/slider';
+@import './blocks/new-brand';
+@import './blocks/panel';
+@import './blocks/popular-products';
+@import './blocks/popular-fabricators';
+@import './blocks/service';
+@import './blocks/weird-shadow';
+@import './blocks/service-tab';
+@import './blocks/information';
+@import './blocks/footer';
+@import './blocks/adress';
+@import './blocks/js-service-classes';
+
+
