@@ -1,5 +1,6 @@
 .search {
-  width: 31rem;
+  max-width: 31rem;
+  width: 100%;
   @include flex(center);
   background-color: inherit;
   transition: all 0.3s;

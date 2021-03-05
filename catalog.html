@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#44494a">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>MarketPlace</title>
+</head>
+<body>
+    <header class="header">
+        <section class="header-panel">
+            <div class="header-panel__wrapper">
+                <a href="#" class="logo">MarketPlace</a>
+                <div class="search">
+                    <label class="search__label" for="search">
+                        <svg class="icon">
+                            <use href="sprite.svg#search"></use>
+                        </svg>
+                    </label>
+                    <input class="search__input" type="text" id="search" placeholder="Поиск: " autocomplete="off">
+                </div>
+                <div class="favourites">
+                    <svg class="icon">
+                        <use href="sprite.svg#bookmark"></use>
+                    </svg>
+                    <span class="favourites__text">Закладки: </span>
+                    <span class="favourites__count">0</span>
+                </div>
+                <div class="shopping-cart">
+                    <svg class="icon">
+                        <use href="sprite.svg#cart"></use>
+                    </svg>
+                    <span class="shopping-cart__text">Корзина: </span>
+                    <span class="shopping-cart__count">0</span>
+                </div>
+                <button class="btn btn__checkout">Оформить заказ</button>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="intro__description">Интернет-магазин<br>строительных материалов<br> и инструментов для ремонта</div>
+            <div class="intro__contact">
+                <div class="intro__content">
+                    <svg class="icon">
+                        <use href="sprite.svg#phone"></use>
+                    </svg>
+                    <a class="intro__phone" href="tel:+79999999999">+7-(999)-99-99</a>
+                </div>
+                <div class="adress--header">г. Санкт-Петербург, ул.Б. Конюшенная, д.12</div>
+            </div>
+            <div class="intro__control">
+                <div class="intro__login">
+                    <svg class="icon">
+                        <use href="sprite.svg#login"></use>
+                    </svg>
+                    <div class="intro__login-text">Войти</div>
+                </div>
+                <div class="intro__registration">Регистрация</div>
+            </div>
+        </section>
+        <nav class="header-panel__nav">
+            <ul class="link link--header">
+                <li class="link__wrapper"><a class="link__item" href="./index.html">Главная</a></li>
+                <li class="link__wrapper"><a class="link__item" href="#">Компания</a></li>
+                <li class="link__wrapper"><a class="link__item" href="#">Каталог</a></li>
+                <li class="link__wrapper"><a class="link__item" href="#">Новости</a></li>
+                <li class="link__wrapper"><a class="link__item" href="#">Спецпредложения</a></li>
+                <li class="link__wrapper"><a class="link__item" href="#">Доставка</a></li>
+                <li class="link__wrapper"><a class="link__item" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <nav class="footer__nav">
+                <div class="footer__label">
+                    <a class="logo" href="index.html">MarketPlace</a>
+                </div>
+                <ul class="link link--top">
+                    <li><a class="link__item" href="#">Главная</a></li>
+                    <li><a class="link__item" href="#">Новости</a></li>
+                    <li><a class="link__item" href="#">Каталог</a></li>
+                    <li><a class="link__item" href="#">Доставка</a></li>
+                    <li><a class="link__item" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__subnav">
+                <div class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7(999) 999-99-99</div>
+                <ul class="link link--subnav">
+                    <li><a class="link__item link__item--yellow" href="#">Материалы</a></li>
+                    <li><a class="link__item link__item--yellow" href="#">Техника</a></li>
+                    <li><a class="link__item link__item--yellow" href="#">Инструмент</a></li>
+                    <li><a class="link__item link__item--yellow" href="#">Спецпредложения</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__wrapper--bottom">
+                <div class="footer__copyright">&copy; 2010–2019 Компания «Техномарт»<br>Все права защищены</div>
+                <nav class="footer__social">
+                    <a class="link__item--footer" href="#">
+                        <svg class="icon--footer">
+                            <use class="use-vk" href="sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a class="link__item--footer" href="#">
+                        <svg class="icon--footer">
+                            <use href="sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="link__item--footer" href="#">
+                        <svg class="icon--footer">
+                            <use href="sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </nav>
+                <div class="footer__author">
+                    Данный сайт создан исключительно в учебных целях.
+                    Автор не поимел с него ни копейки
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="js/script.min.js"></script>
+</body>
+</html>
