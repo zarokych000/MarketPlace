@@ -3,12 +3,17 @@
   width: 94rem;
   height: 8.9rem;
   margin: 0 auto;
-  margin-top: 5.2rem;
   padding: 2.81rem;
   background: #f9f5f0;
+
+  &--blue {
+    background: #f2f6f8;
+  }
 }
 
 .panel__title{
   font-size: 2.8rem;
   font-weight: normal;
+  color: #32425c;
+  text-transform: uppercase;
 }

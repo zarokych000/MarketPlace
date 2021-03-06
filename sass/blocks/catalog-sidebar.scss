@@ -1,0 +1,11 @@
+.catalog-sidebar {
+  width: 100%;
+  max-width: 94rem;
+  
+  margin: auto;
+
+  @include flex(stretch, space-between);
+
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}

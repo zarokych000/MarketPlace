@@ -5,13 +5,17 @@
   list-style: none;
 }
 
-.link--top{
+.link--footer{
   margin-top: 2rem;
+  justify-content: space-between;
+  margin-left: 17rem;
 }
 
 
-.link--subnav{
+.link--subfooter{
   flex: 1 1 20rem;
+  justify-content: space-between;
+  margin-left: 10rem;
 }
 
 .link--header{
@@ -39,7 +43,6 @@
   text-decoration: none;
   display: block;
   height: 3.5rem;
-  margin-right: 1rem;
   font-size: 1.7rem;
 
   &--yellow {

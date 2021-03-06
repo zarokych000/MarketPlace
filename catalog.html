@@ -76,14 +76,80 @@
         </nav>
     </header>
     <main>
+        <section class="path-panel">
+            <div class="path-panel__wrapper">
+                <div class="path-panel__home">
+                    <svg class="icon icon--path">
+                        <use href="sprite.svg#home"></use>
+                    </svg>
+                </div>
+                <div class="path-panel__arrow">
+                    <svg class="icon icon--path-arrow">
+                        <use href="sprite.svg#arrow"></use>
+                    </svg>
+                </div>
+                <div class="path-panel__item">Каталог</div>
+                <div class="path-panel__arrow">
+                    <svg class="icon icon--path-arrow">
+                        <use href="sprite.svg#arrow"></use>
+                    </svg>
+                </div>
+                <div class="path-panel__item">Инструмент</div>
+                <div class="path-panel__arrow">
+                    <svg class="icon icon--path-arrow">
+                        <use href="sprite.svg#arrow"></use>
+                    </svg>
+                </div>
+                <div class="path-panel__item">Перфоратор</div>
+            </div>
+        </section>
+        <section class="panel panel--blue">
+            <h3 class="panel__title">Перфораторы</h3>
+        </section>
+        <section class="catalog-sidebar catalog-sidebar--wrapper">
+            <aside class="filter">
+                <div class="filter__panel">Фильтр:</div>
+                <div class="filter__price">
+                    <h4 class="filter__title">Цена:</h4>
+                    <div class="filter__thumb-wrapper">
+                        <div class="filter__thumb"></div>
+                    </div>
+                    <div class="filter__range">
+                        <div class="filter__lower">0</div>
+                        <div class="filter__dash">-</div>
+                        <div class="filter__upper">30000</div>
+                    </div>
+                </div>
+                <div class="filter__fabricators">
+                    <h4 class="filter__title">Производители:</h4>
+                    <ul class="filter__list">
+                        <li class="filter__item">BOSCH</li>
+                        <li class="filter__item">Интерскол</li>
+                        <li class="filter__item">Makita</li>
+                        <li class="filter__item">Dewalt</li>
+                        <li class="filter__item">Hitachi</li>
+                    </ul>
+                </div>
+                <div class="filter__power">
+                    <div class="filter__radio">Аккумуляторные</div>
+                    <div class="filter__radio">Сетевые</div>
+                </div>
+                <div class="filter__show">
+                    Показать
+                </div>
+            </aside>
+            <section class="catalog">
+                <div class="catalog__sort"></div>
+                <div class="catalog__catalog"></div>
+                <div class="catalog__pages"></div>
+            </section>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
             <nav class="footer__nav">
-                <div class="footer__label">
-                    <a class="logo" href="index.html">MarketPlace</a>
-                </div>
-                <ul class="link link--top">
+                <a class="logo" href="index.html">MarketPlace</a>
+                <ul class="link link--footer">
                     <li><a class="link__item" href="#">Главная</a></li>
                     <li><a class="link__item" href="#">Новости</a></li>
                     <li><a class="link__item" href="#">Каталог</a></li>
@@ -92,8 +158,8 @@
                 </ul>
             </nav>
             <nav class="footer__subnav">
-                <div class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7(999) 999-99-99</div>
-                <ul class="link link--subnav">
+                <div class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(999) 999-99-99</div>
+                <ul class="link link--subfooter">
                     <li><a class="link__item link__item--yellow" href="#">Материалы</a></li>
                     <li><a class="link__item link__item--yellow" href="#">Техника</a></li>
                     <li><a class="link__item link__item--yellow" href="#">Инструмент</a></li>

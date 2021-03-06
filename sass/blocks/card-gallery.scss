@@ -1,7 +1,13 @@
+.card-galery {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
 .card-galery__wrapper{
   display: grid;
   grid-gap: 2rem;
   width: 94rem;
+  list-style: none;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;

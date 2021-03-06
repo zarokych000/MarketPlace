@@ -1,0 +1,32 @@
+.filter{
+  width: 100%;
+  max-width: 22rem;
+}
+
+.filter__panel{
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 1.4rem 0 1.4rem 1.8rem;
+  text-transform: uppercase;
+
+  border-radius: 0.3rem;
+
+  background: #f7f3ec;
+}
+
+.filter__price {
+  padding: 2rem 0;
+}
+
+.filter__title {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.filter__thumb-wrapper{
+  padding: 3rem 2rem;
+  border-radius: 0.3rem;
+  background: #f7f3ec;
+  
+  @include flex(center, center);
+}

@@ -4,10 +4,10 @@
 }
 
 .popular-fabricators__gallery{
-  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 8.5rem;
   @include flex(stretch, flex-start, row, wrap);
   list-style: none;
-  margin-bottom: 8.5rem;
 }
 
 .popular-fabricators__card{
