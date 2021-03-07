@@ -20,13 +20,87 @@
 
 .filter__title {
   font-size: 1.7rem;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .filter__thumb-wrapper{
+  margin-top: 2.3rem;
   padding: 3rem 2rem;
   border-radius: 0.3rem;
   background: #f7f3ec;
   
   @include flex(center, center);
+}
+
+.filter__range{
+  width: 100%;
+  padding: 8px 0 20px 0;
+  @include flex(center, space-between);
+}
+
+.filter__lower{
+  max-width: 9.5rem;
+  width: 100%;
+  padding: 13px 0;
+  text-align: center;
+
+  font-size: 1.7rem;
+  padding: 13px 35px;
+  background: #f7f3ec;
+  border-radius: 0.3rem;
+}
+
+.filter__dash {
+  background: #444444;
+  width: 0.9rem;
+  height: 0.1rem;
+}
+
+.filter__upper{
+  max-width: 9.5rem;
+  width: 100%;
+  font-size: 1.7rem;
+  padding: 13px 0;
+  text-align: center;
+  background: #f7f3ec;
+  border-radius: 0.3rem;
+}
+
+.filter__divider{
+  width: 100%;
+  height: 1px;
+
+  background: #e5e5e5;
+}
+
+.filter__list{
+  list-style: none;
+  padding-bottom: 2rem;
+}
+
+.filter__item{
+  margin-top: 13px;
+}
+
+.filter__power{
+  padding: 26px 0 40px 0;
+  font-size: 1.5rem;
+}
+
+.filter__radio{
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+.filter__show{
+  display: block;
+  font-size: 1.3rem;
+  padding: 15px 0 15px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 13.8rem;
+  background: white;
+  border: 2px solid #e5e5e5;
+  text-transform: uppercase;
 }

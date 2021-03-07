@@ -112,31 +112,74 @@
                 <div class="filter__price">
                     <h4 class="filter__title">Цена:</h4>
                     <div class="filter__thumb-wrapper">
-                        <div class="filter__thumb"></div>
+                        <div class="thumb">
+                            <div class="thumb__round thumb__round--right">
+                                <div class="thumb__dot"></div>
+                            </div>
+                            <div class="thumb__active"></div>
+                            <div class="thumb__round thumb__round--left">
+                                <div class="thumb__dot"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="filter__range">
                         <div class="filter__lower">0</div>
-                        <div class="filter__dash">-</div>
+                        <div class="filter__dash"></div>
                         <div class="filter__upper">30000</div>
                     </div>
+                    <div class="filter__divider"></div>
                 </div>
                 <div class="filter__fabricators">
                     <h4 class="filter__title">Производители:</h4>
                     <ul class="filter__list">
-                        <li class="filter__item">BOSCH</li>
-                        <li class="filter__item">Интерскол</li>
-                        <li class="filter__item">Makita</li>
-                        <li class="filter__item">Dewalt</li>
-                        <li class="filter__item">Hitachi</li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input class="checkbox__input" type="checkbox">
+                                <span class="checkbox__box"></span>
+                                <span class="checkbox__text">bosch</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input class="checkbox__input" type="checkbox">
+                                <span class="checkbox__box"></span>
+                                <span class="checkbox__text">Makita</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input class="checkbox__input" type="checkbox">
+                                <span class="checkbox__box"></span>
+                                <span class="checkbox__text">Интерскол</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input class="checkbox__input" type="checkbox">
+                                <span class="checkbox__box"></span>
+                                <span class="checkbox__text">Dewalt</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="checkbox">
+                                <input class="checkbox__input" type="checkbox">
+                                <span class="checkbox__box"></span>
+                                <span class="checkbox__text">Hitachi</span>
+                            </label>
+                        </li>
                     </ul>
+                    <div class="filter__divider"></div>
                 </div>
                 <div class="filter__power">
-                    <div class="filter__radio">Аккумуляторные</div>
+                    <div class="filter__title">Питание: </div>
+                    <div class="filter__radio">
+                        Аккумуляторные
+                    </div>
                     <div class="filter__radio">Сетевые</div>
                 </div>
-                <div class="filter__show">
+                <button class="filter__show">
                     Показать
-                </div>
+                </button>
             </aside>
             <section class="catalog">
                 <div class="catalog__sort"></div>

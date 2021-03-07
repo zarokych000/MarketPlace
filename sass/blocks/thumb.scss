@@ -1,0 +1,45 @@
+.thumb {
+  width: 17rem;
+  height: 0.2rem;
+  background: #d7dcde;
+  position: relative;
+
+}
+
+.thumb__round { 
+  width: 2rem;
+  height: 2rem;
+  background: #ffffff;
+  border-radius: 50%;
+
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include flex(center, center);
+}
+
+.thumb__round--left {
+  left: 0;
+}
+
+.thumb__round--right{
+  right: 1.5rem;
+}
+
+.thumb__dot {
+  height: 0.2rem;
+  width: 0.2rem;
+  background: #ababab;
+}
+
+.thumb__active {
+  position: absolute;
+  left: 0;
+  right: 1.5rem;
+  background: #00ca74;
+  width: 13.5rem;
+  height: 0.2rem;
+
+}
