@@ -172,19 +172,40 @@
                 </div>
                 <div class="filter__power">
                     <div class="filter__title">Питание: </div>
-                    <div class="filter__radio">
+                    <label class="filter__radio"> 
+                        <input class="radio__input" type="radio" name="radio">
+                        <span class="radio__radiobtn"></span>
                         Аккумуляторные
-                    </div>
-                    <div class="filter__radio">Сетевые</div>
+                    </label>
+                    <label class="filter__radio">
+                        <input class="radio__input" type="radio" name="radio">
+                        <span class="radio__radiobtn"></span>     
+                        Сетевые                       
+                    </label>
                 </div>
                 <button class="filter__show">
                     Показать
                 </button>
             </aside>
             <section class="catalog">
-                <div class="catalog__sort"></div>
-                <div class="catalog__catalog"></div>
-                <div class="catalog__pages"></div>
+                <div class="sort">
+                    <div class="sort__title">Сортировка:</div>
+                    <div class="sort__options">
+                        <div class="sort__option">По цене</div>
+                        <div class="sort__option">По типу</div>
+                        <div class="sort__option">По функционалу</div>
+                        <div class="sort__arrows">
+                            <svg class="icon icon--filter-top">
+                                <use href="sprite.svg#filter-arrow"></use>
+                            </svg>
+                            <svg class="icon icon--filter-bottom">
+                                <use href="sprite.svg#filter-arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__gallery"></div>
+                <div class="pages"></div>
             </section>
         </section>
     </main>

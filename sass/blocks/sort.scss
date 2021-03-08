@@ -1,0 +1,19 @@
+.sort{
+  width: 100%;
+  background: #f7f3ec;
+  padding: 14px 19px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+
+  @include flex(center, space-between);
+}
+
+.sort__title { 
+  flex: 1 1 20rem;
+}
+
+.sort__options{
+  @include flex(center, space-between);
+  flex: 2 1 35rem;
+}
+

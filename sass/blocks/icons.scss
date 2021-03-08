@@ -38,9 +38,19 @@
     height: 1.3rem;
   }
 
+  &--filter-bottom {
+    transform: rotate(90deg);
+    width: 10px;
+    height: 10px;
+    fill: #c5c5c5;
+    margin-left: 2rem;
+  }
 
-}
+  &--filter-top {
+    transform: rotate(270deg);
+    width: 10px;
+    height: 10px;
+    fill: #c5c5c5;
+  }
 
-.cart-back {
-  fill: red;
 }
