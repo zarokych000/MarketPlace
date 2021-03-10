@@ -171,3 +171,51 @@
     background: darken($color: $red, $amount: 14%);
   }
 }
+
+.btn__page {
+  display: block;
+  border: 1px solid #e5e5e5;
+  background: white;
+  font-size: 1.3rem;
+  padding: 1.4rem 1.6rem;
+  border-radius: 0.2rem;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 1px solid #bdc6ca;
+  }
+
+  &:active {
+    border: 1px solid #ee3643;
+  }
+  
+  &:focus {
+    outline: none;
+  }
+
+  &--active {
+    background: #ee3643;
+    color: white;
+    border: none;
+  }
+}
+
+.btn__next{
+  border: 1px solid #e5e5e5;
+  background: white;
+  padding: 1.4rem 3.1rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 1px solid #bdc6ca;
+  }
+
+  &:active {
+    border: 1px solid #ee3643;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

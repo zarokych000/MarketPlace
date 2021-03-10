@@ -38,19 +38,38 @@
     height: 1.3rem;
   }
 
-  &--filter-bottom {
+}
+
+
+.icon__filter {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #6a7180;
+  transition: all 0.3s;
+
+  &-top{
+    transform: rotate(270deg);
+    width: 10px;
+    height: 10px;
+    fill: #c5c5c5;
+    &--active {
+      fill: #ee3a47;
+    }
+  }
+
+  &-bottom {
     transform: rotate(90deg);
     width: 10px;
     height: 10px;
     fill: #c5c5c5;
     margin-left: 2rem;
+    &--active {
+      fill: #ee3a47;
+    }
   }
 
-  &--filter-top {
-    transform: rotate(270deg);
-    width: 10px;
-    height: 10px;
-    fill: #c5c5c5;
-  }
 
+  &:hover {
+    fill: #231f20;
+  }
 }

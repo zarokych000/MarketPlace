@@ -1,0 +1,156 @@
+.products__item{
+  @include flex(stretch, flex-start, column);
+  width: 22rem;
+  height: 31.8rem;
+  border: 1px solid #e6e5e5;
+  perspective: 1000px;
+  margin-right: 2rem;
+  
+  &--catalog {
+    margin: 0 20px 20px 0;
+  }
+
+  &--catalog:nth-child(3n){
+    margin: 0 0 20px 0;
+  }
+
+  &--new{
+    position: relative;
+    overflow: hidden;
+
+
+    &:hover {
+      border: none;
+      -webkit-box-shadow: 0px 0px 48px -22px rgba(0,0,0,0.67);
+      -moz-box-shadow: 0px 0px 48px -22px rgba(0,0,0,0.67);
+      box-shadow: 0px 0px 48px -22px rgba(0,0,0,0.67);
+
+      .products__flipper {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  &:last-child {
+    margin-right:0;
+  }
+
+  &:hover {
+    border: none;
+
+    .products__flipper {
+      transform: rotateY(180deg);
+      -webkit-box-shadow: 0px 0px 48px -22px rgba(0,0,0,0.67);
+      -moz-box-shadow: 0px 0px 48px -22px rgba(0,0,0,0.67);
+      box-shadow: 0px 0px 48px -22px rgba(0,0,0,0.67);
+    }
+  }
+}
+
+.products__flipper {
+  height: 100%;
+  width: 100%;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.products__front,
+.products__back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+.products__front {
+	z-index: 2;
+	transform: rotateY(0deg);
+  height: 100%;
+} 
+
+.products__back {
+  height: 100%;
+  width: 100%;
+  @include flex(center, flex-start, column);
+  transform: rotateY(180deg);
+}
+
+.products__buttons-wrapper {
+  margin-top: 4.5rem;
+  @include flex(center, center, column);
+}
+
+.products__wrapper-buy-btn {
+  position: relative;
+
+  &:hover {
+    .icon--buy {
+      fill: white;
+    }
+  }
+
+  &:active {
+    .icon--buy {
+      fill: white;
+    }
+  }
+}
+
+
+.products__image{
+  flex: 1 2 21rem;
+}
+
+.products__about{
+  flex: 1 1 14.7rem;
+  text-align: center;
+}
+
+.products__about--back{
+  margin-top: 4.2rem;
+}
+
+.products__title{
+  font-size: 1.8rem;
+
+  &--back {
+    text-align: center;
+  }
+}
+
+.products__old{
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  text-decoration: line-through;
+  color: #A9A9A9;
+}
+
+.products__label{
+  position: relative;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 700;
+  width: 10.2rem;
+  margin: 0 auto;
+  padding: 0.8rem;
+  background: $red;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0rem;
+    left: 10.2rem;
+    border: 18px solid transparent;
+    border-left: 20px solid $red;
+  }
+
+  &--back{
+    margin-top: 3.7rem;
+  }
+}
+
+

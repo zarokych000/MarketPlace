@@ -17,3 +17,26 @@
   flex: 2 1 35rem;
 }
 
+.sort__option {
+  opacity: 0.5;
+  border-bottom: 1px dotted red;
+  line-height: 1.5rem;
+
+  &:hover {
+    border-bottom: 1px solid red;
+    line-height: 1.5rem;
+    opacity: 1;
+  }
+  
+  &--active {
+    color: red;
+    opacity: 1;
+    border-bottom: none;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+
+
+}

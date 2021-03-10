@@ -1,0 +1,8 @@
+.pages__list {
+  list-style: none;
+  @include flex(center);
+}
+
+.pages__item {
+  margin-right: 1rem;
+}

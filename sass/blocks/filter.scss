@@ -84,7 +84,7 @@
 }
 
 .filter__power{
-  padding: 26px 0 40px 0;
+  padding: 26px 0 76px 0;
   font-size: 1.5rem;
 }
 
@@ -98,4 +98,18 @@
   background: white;
   border: 2px solid #e5e5e5;
   text-transform: uppercase;
+
+  transition: all 0.3s;
+
+  &:hover {
+    border: 2px solid #bdc6ca;
+  }
+
+  &:active {
+    border: 2px solid #ee3643;
+  }
+  
+  &:focus {
+    outline: none;
+  }
 }
