@@ -1,0 +1,18 @@
+.container {
+  max-width: 94rem;
+  width: 100%;
+
+  margin: auto;
+  
+  &--intro {
+    @include flex(stretch, space-between);
+    margin-top: 2.6rem;
+  }
+
+  &--sidebar {
+    @include flex(stretch, space-between);
+
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+  }
+}

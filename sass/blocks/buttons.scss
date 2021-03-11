@@ -196,7 +196,11 @@
   &--active {
     background: #ee3643;
     color: white;
-    border: none;
+    border: 1px solid #ee3643;
+
+    &:hover {
+      border: 1px solid #ee3643;
+    }
   }
 }
 

@@ -3,12 +3,8 @@
 }
 
 .footer__wrapper{
-  width: 94rem;
-  margin: auto;
 
   &--bottom {
-    width: 94rem;
-    margin: auto;
     color: white;
     @include flex(stretch, space-between);
     padding: 3rem 0;

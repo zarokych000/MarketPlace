@@ -4,18 +4,6 @@
 
 .header-panel__wrapper{
   @include flex(stretch, space-between);
-  width: 100%;
-  max-width: 94rem;
-  margin: 0 auto;
   font-size: 1.7rem;
   color: white;
-}
-
-.header-panel__nav{
-  width: 100%;
-  max-width: 94rem;
-  height: 60px;
-  margin: 0 auto;
-  margin-top: 4.3rem;
-  background-color: $darkBackground;
 }

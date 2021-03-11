@@ -4,9 +4,6 @@
 }
 
 .information__wrapper{
-  width: 94rem;
-  margin: auto;
-
   @include flex(stretch, space-between)
 }
 

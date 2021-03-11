@@ -1,9 +1,5 @@
 .path-panel__wrapper {
   @include flex(center);
-  max-width: 94rem;
-  width: 100%;
-
-  margin: auto;
   padding: 2.3rem 0;
 }
 

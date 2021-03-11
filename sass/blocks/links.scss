@@ -20,6 +20,9 @@
 
 .link--header{
   box-shadow: 0 0.5rem 0 darken($color: #293449, $amount: 10%);
+  height: 60px;
+  margin-top: 4.3rem;
+  background-color: $darkBackground;
 }
 
 .link__wrapper{

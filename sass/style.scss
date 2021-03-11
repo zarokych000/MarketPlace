@@ -19,6 +19,7 @@ body{
   grid-template-rows: minmax(320px, auto) minmax(1000px, auto) auto ;
 }
 
+@import './blocks/container.scss';
 @import './blocks/header';
 @import './blocks/header-panel';
 @import './blocks/logo';
@@ -54,3 +55,4 @@ body{
 @import './blocks/products.scss';
 @import './blocks/pages.scss';
 @import './blocks/tool.scss';
+@import './blocks/modal.scss';
