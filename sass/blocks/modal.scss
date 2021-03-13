@@ -1,10 +1,30 @@
 .modal {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.modal__content {
+  background: white;
   max-width: 62rem;
   width: 100%;
-
+  z-index: 1000;
   margin: auto;
-  padding: 5.5rem 0 3.7rem 0;
+  padding: 5.5rem 0 0 0;
   border-top: 7px solid #ff5357;
+  box-shadow: -1px 10px 31px 6px rgba(0,0,0,0.27);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal__container {
@@ -14,10 +34,54 @@
   margin: auto;
 }
 
-.modal__content {
+.modal__main {
+  padding-bottom: 5rem;
   &--cart {
     @include flex(center, space-between);
-    padding: 0 12.6rem 0 8.1rem;
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
 }
+
+.modal__title {
+  margin-left: 3.2rem;
+}
+
+.modal__btns {
+  width: 100%;
+  background: #f1f1f1;
+  @include flex(center, center);
+}
+
+.modal__bottom-wrapper {
+  max-width: 46rem;
+  width: 100%;
+  @include flex(center, space-between);
+  padding: 3.7rem 0;
+}
+
+.modal__crist {
+  position: absolute;
+  top: 18px;
+  right: 33px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 2.6rem;
+    height: 0.3rem;
+    background: #ee3643;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+
+    width: 2.6rem;
+    height: 0.3rem;
+    background: #ee3643;
+    transform: rotate(45deg);
+  }
+}
+

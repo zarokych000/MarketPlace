@@ -223,3 +223,29 @@
     outline: none;
   }
 }
+
+.btn__modal {
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1.4rem 0;
+  width: 100%;
+  max-width: 22rem;
+  @include flex(center, center);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.btn__checkout-modal {
+  color: white;
+  background: #ee3643;
+}
+
+.btn__continue {
+  background: white;  
+}
+
+.btn__write-us {
+  background: #ee3643;
+  color: white;
+  width: 460px;
+}

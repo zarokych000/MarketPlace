@@ -553,14 +553,23 @@
             </div>
         </div>
     </footer>
-    <div class="modal modal--cart">
-        <div class="modal__container">
-            <div class="modal__content modal__content--cart">
-                <svg class="icon icon--check">
-                    <use href="sprite.svg#check-cart"></use>
-                </svg>
-                <h4>Товар добавлен в корзину!</h4>
+    <div class="modal modal--cart" style="display:none;">
+        <div class="modal__content">
+            <div class="modal__container">
+                <div class="modal__main modal__main--cart">
+                    <svg class="icon icon--check">
+                        <use href="sprite.svg#check-cart"></use>
+                    </svg>
+                    <h4 class="modal__title">Товар добавлен в корзину!</h4>
+                </div>
             </div>
+            <div class="modal__btns">
+                <div class="modal__bottom-wrapper">
+                    <button class="btn__modal btn__checkout-modal">Оформить заказ</button>
+                    <button class="btn__modal btn__continue">Продолжить покупки</button>
+                </div>
+            </div>
+            <div class="modal__crist"></div>
         </div>
     </div>
 <script src="js/script.min.js"></script>

@@ -1,0 +1,50 @@
+.form__contacts {
+  @include flex(center, space-between);
+}
+
+.form__label {
+  @include flex(flex-start, space-between, column);
+  flex: 1 1 20rem;
+}
+
+.form__label:nth-child(1) {
+  margin-right: 2rem;
+}
+
+.form__input {
+  margin-top: 1.3rem;
+  padding: 1.4rem 0 1.4rem 1.4rem;
+  display: block;
+  width: 100%;
+  border: 2px solid #dee3e4;
+  border-radius: 0.3rem;
+}
+
+.form__text {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.form__letter {
+  margin-top: 2.5rem;
+}
+
+
+.form__textarea {
+  resize: none;
+  width: 100%;
+  height: 11.4rem;
+
+  padding: 1.4rem 0 1.4rem 1.4rem;
+  display: block;
+  border: 2px solid #dee3e4;
+  border-radius: 0.3rem;
+  margin-top: 1.3rem;
+}
+
+.form__textarea:placeholder-shown {
+  font: 400 13.3333px Arial;
+  white-space: normal;
+  overflow-wrap: normal;
+}
+
