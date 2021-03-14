@@ -7,6 +7,10 @@
     font-size: 1.2rem;
     margin-top: 0.7rem;
     color: $lightBackground;
+
+    @media (max-width: 992px) {
+    font-size: 1rem;
+    }
   }
   
 }

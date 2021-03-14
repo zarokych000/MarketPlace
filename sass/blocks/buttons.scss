@@ -23,6 +23,17 @@
   &:active{
     background-color: #518534;
   }
+
+  @media (max-width: 767px) {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  @media (max-width: 576px) {
+    max-width: 100%;
+    padding: 2.6rem;
+    font-size: 1.47rem;
+  }
 }
 
 .btn__service{
@@ -247,5 +258,6 @@
 .btn__write-us {
   background: #ee3643;
   color: white;
-  width: 460px;
+  width: 100%;
+  max-width: 46rem;
 }

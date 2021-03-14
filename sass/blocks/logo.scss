@@ -19,4 +19,15 @@
   &:active{
     background-color: darken($color:$red, $amount: 15%)
   }
+
+  @media (max-width: 767px) {
+    box-shadow: none;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 576px) {
+    max-width: 100%;
+    font-size: 2rem;
+    padding: 2.22rem 0;
+  }
 }

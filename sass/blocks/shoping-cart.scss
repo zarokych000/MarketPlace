@@ -23,6 +23,11 @@
       fill: #8b8e94;
     }
   }
+
+  @media (max-width: 576px) {
+    max-width: 100%;
+    padding: 2.17rem;
+  }
 }
 
 .shopping-cart__text{
