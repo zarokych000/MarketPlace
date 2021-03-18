@@ -77,12 +77,14 @@
                     <li class="link__wrapper"><a class="link__item" href="#">Спецпредложения</a></li>
                     <li class="link__wrapper"><a class="link__item" href="#">Доставка</a></li>
                     <li class="link__wrapper"><a class="link__item" href="#">Контакты</a></li>
-                    <span class="link__mobile-arrow"></span>
+                    <svg class="link__mobile-arrow">
+                        <use href="sprite.svg#arrow"></use>
+                    </svg>
                 </ul>
             </div>
         </nav>
     </header>
-    <main style="display: none;">
+    <main>
         <section class="card-galery">
             <div class="container">
                 <ul class="card-galery__wrapper">
@@ -141,12 +143,12 @@
                         </div>
                     </li>
                     <li class="card card--delivery">
-                        <div class="card__wrapper">
-                            <div class="card__text">Доставка</div>
+                        <div class="card__wrapper card__wrapper--delivery">
+                            <div class="card__text card__text--delivery">Доставка</div>
                             <button class="card__link card__link--delivery">БЕСПЛАТНО</button>
                         </div>
-                        <div class="card__image-wrapper">
-                            <img class="card__image" src="icons/delivery-icon.png" alt="">
+                        <div class="card__image-wrapper card__image-wrapper--delivery">
+                            <img class="card__image card__image--delivery" src="icons/delivery-icon.png" alt="">
                         </div>
                     </li>
                 </ul>
@@ -323,13 +325,13 @@
                         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                     </div>
                     <div class="service__content">
-                        <ul class="service__tabs">
+                        <ul class="service__tabs-control">
                             <li class="service__tab service__tab-active">Доставка</li>
                             <li class="service__tab">Гарантия</li>
                             <li class="service__tab">Кредит</li>
                             <li class="weird-shadow"><img src="img/weird shadow.png" alt=""></li>
                         </ul>
-                        <ul>
+                        <ul class="service__tabs">
                             <li class="service-tab__content delivery hide">
                                 <div class="service-tab__text">
                                     <h4>Доставка</h4>

@@ -2,14 +2,14 @@
   width: 80px;
   height: 20px;
   font-size: 1.5rem;
-  color: white;
+  color: #fff;
   text-align: center;
   background: #ff5257;
   position: absolute;
-  left: 24rem;
-  top: 0.9rem;
+  right: -20px;
+  top: .9rem;
   transform: rotate(45deg);
-
+  
   &--products {
     top: 1.2rem;
     left: 14rem;

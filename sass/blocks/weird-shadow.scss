@@ -2,4 +2,8 @@
   top: -4rem;
   right: 0rem;
   position: absolute;
+
+  @media (max-width: 576px) {
+    display: none;
+  }
 }

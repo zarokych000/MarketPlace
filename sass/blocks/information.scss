@@ -4,9 +4,12 @@
 }
 
 .information__wrapper{
-  @include flex(stretch, space-between)
-}
+  @include flex(stretch, space-between);
 
+  @media (max-width: 992px) {
+  }
+
+}
 
 .information__company{
   font-size: 1.6rem;
@@ -15,6 +18,11 @@
 .information__title{
   font-size: 3.2rem;
   text-transform: uppercase;
+
+  @media (max-width: 992px) {
+    font-size: 2.7rem;
+    text-align: center;
+  }
 }
 
 .information__description{

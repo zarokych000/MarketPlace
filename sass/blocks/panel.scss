@@ -7,6 +7,12 @@
   &--blue {
     background: #f2f6f8;
   }
+
+  @media (max-width: 576px) {
+    @include flex(center, flex-start, column);
+    height: 100%;
+    padding: 2rem;
+  }
 }
 
 .panel__title{
@@ -14,4 +20,13 @@
   font-weight: normal;
   color: #32425c;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2rem;
+    text-align: center;
+  }
 }

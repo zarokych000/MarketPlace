@@ -6,10 +6,27 @@
 
 .service__wrapper{
   padding-bottom: 60px;
+
+  @media (max-width: 992px) {
+    padding: 0 3rem;    
+  }
+
+  @media (max-width: 776px) {
+    padding: 0 1rem;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0;
+  }
 }
 
 .service__header{
   padding-top: 6.8rem;
+
+  @media (max-width: 992px) {
+    text-align: center;
+    padding-top: 4rem;
+  }
 }
 
 .service__header h3{
@@ -20,18 +37,39 @@
   font-size: 1.4rem;
   padding-top: 3rem;
   line-height: 1.6;
+
+  @media (max-width: 992px) {
+    padding-top: 2rem;
+  }
 }
 
 .service__content{
   display: flex;
   padding-top: 6rem;
   position: relative;
+
+  @media (max-width: 992px) {
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+
+  @media (max-width: 576px) {
+    @include flex(stretch, center, column);
+    padding-top: 3rem;
+  }
 }
 
-.service__tabs{
+.service__tabs-control{
   position: relative;
   border-right: 2px solid rgba(209, 212, 213, 0.1);
   list-style: none;
+}
+
+.service__tabs {
+
+  @media (max-width: 576px) {
+    @include flex(stretch, center, column);
+  }
 }
 
 .service__tab{
@@ -45,10 +83,16 @@
   padding: 1.9rem;
   padding-left: 2.1rem;
   width: 24rem;
+  // max-width: 24rem;
   transition: background 0.3s;
 
   &:hover {
     background: #293449;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+    text-align: center;
   }
 }
 

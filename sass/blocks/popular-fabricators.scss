@@ -1,7 +1,7 @@
 .popular-fabricators__gallery{
   padding-top: 2rem;
   padding-bottom: 8.5rem;
-  @include flex(stretch, flex-start, row, wrap);
+  @include flex(center, center, row, wrap);
   list-style: none;
 }
 
@@ -19,10 +19,26 @@
 
   &:nth-child(4){
     margin-right: 0;
+
+    @media (max-width: 992px) {
+      margin-right: 2rem;
+    }
+
+    @media (max-width: 767px) {
+      margin: 1rem;
+    }
   }
 
   &:nth-child(8){
     margin-right: 0;
+
+    @media (max-width: 992px) {
+      margin-right: 2rem;
+    }
+
+    @media (max-width: 767px) {
+      margin: 1rem;
+    }
   }
 
   &:hover {
@@ -33,6 +49,10 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  @media (max-width: 767px) {
+    margin: 1rem;
   }
 }
 
