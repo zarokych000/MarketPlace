@@ -79,6 +79,11 @@
   &:active {
     background: darken($color: $red, $amount: 14%);
   }
+
+  @media (max-width: 576px) {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
 }
 
 .btn__contacts{
@@ -98,6 +103,17 @@
 
   &:active {
     background: darken($color: $red, $amount: 14%);
+  }
+
+  @media (max-width: 992px) {
+    font-size: 1.3rem;
+    padding: 1.2rem 2rem;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1.65rem 2rem;
   }
 }
 
