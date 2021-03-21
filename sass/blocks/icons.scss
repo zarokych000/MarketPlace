@@ -74,6 +74,10 @@
     &--active {
       fill: #ee3a47;
     }
+
+    @media (max-width: 576px) {
+      margin-left: 0.4rem;
+    }
   }
 
 

@@ -5,15 +5,8 @@
   border: 1px solid #e6e5e5;
   perspective: 1000px;
   margin-right: 2rem;
+  font-family: 'PT Sans';
   
-  &--catalog {
-    margin: 0 20px 20px 0;
-  }
-
-  &--catalog:nth-child(3n){
-    margin: 0 0 20px 0;
-  }
-
   &--new{
     position: relative;
     overflow: hidden;
@@ -49,6 +42,25 @@
   @media (max-width: 992px) {
     margin-right: 0;
     margin-top: 1.5rem;
+  }
+
+
+  &--catalog {
+    margin: 0 20px 20px 0;
+
+    @media (max-width: 992px) {
+      margin: 0;
+      margin-top: 3rem;
+    }
+  }
+
+  &--catalog:nth-child(3n){
+    margin: 0 0 20px 0;
+
+    @media (max-width: 992px) {
+      margin: 0;
+      margin-top: 3rem;
+    }
   }
 }
 
@@ -86,6 +98,7 @@
 
 .products__buttons-wrapper {
   margin-top: 4.5rem;
+  font-family: Cuprum;
   @include flex(center, center, column);
 }
 
@@ -129,9 +142,11 @@
 
 .products__old{
   font-size: 1.7rem;
+  font-weight: bold;
+  color: #A9A9A9;
+
   padding: 0.8rem;
   text-decoration: line-through;
-  color: #A9A9A9;
 }
 
 .products__label{
@@ -149,8 +164,8 @@
     position: absolute;
     top: 0rem;
     left: 10.2rem;
-    border: 18px solid transparent;
-    border-left: 20px solid $red;
+    border: 19.24px solid transparent;
+    border-left: 18px solid #ee3643;
   }
 
   &--back{

@@ -4,6 +4,10 @@
   background: #d7dcde;
   position: relative;
 
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .thumb__round { 
@@ -42,4 +46,8 @@
   width: 13.5rem;
   height: 0.2rem;
 
+
+  @media (max-width: 767px) {
+    width: calc(100% - 35px);
+  }
 }

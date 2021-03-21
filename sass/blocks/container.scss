@@ -19,10 +19,12 @@
     }
   }
 
-  &--sidebar {
+  &--catalog {
     @include flex(stretch, space-between);
+    padding: 2rem 1rem 6rem 1rem;
 
-    padding-top: 2rem;
-    padding-bottom: 6rem;
+    @media (max-width: 767px) {
+      @include flex(center, center, column);
+    }
   }
 }

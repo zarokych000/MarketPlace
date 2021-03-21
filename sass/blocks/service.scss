@@ -29,14 +29,19 @@
   }
 }
 
-.service__header h3{
+.service__title {
   font-size: 3rem;
+  font-family: Cuprum;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-.service__header p{
+.service__description{
   font-size: 1.4rem;
   padding-top: 3rem;
   line-height: 1.6;
+
+  font-family: "PT Sans";
 
   @media (max-width: 992px) {
     padding-top: 2rem;
@@ -63,6 +68,7 @@
   position: relative;
   border-right: 2px solid rgba(209, 212, 213, 0.1);
   list-style: none;
+  font-family: Cuprum;
 }
 
 .service__tabs {

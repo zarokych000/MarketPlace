@@ -39,6 +39,10 @@
 .slider{
   list-style: none;
   height: 26.6rem;
+
+  @media (max-width: 767px) {
+    height: 100%;
+  }
 }
 
 .slider__item{

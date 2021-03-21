@@ -2,6 +2,8 @@
   padding-top: 6rem;
   padding-bottom: 4rem;
 
+  font-family: Cuprum;
+
   @media (max-width: 767px) {
     padding-top: 3.5rem;
   }
@@ -27,7 +29,7 @@
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 120px 120px 120px 120px;
     grid-gap: 0;
   }
 

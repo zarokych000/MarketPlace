@@ -6,15 +6,35 @@
   text-transform: uppercase;
 
   @include flex(center, space-between);
+
+  @media (max-width: 576px) {
+    @include flex(center, flex-start, column);  }
 }
 
 .sort__title { 
   flex: 1 1 20rem;
+  
+  @media (max-width: 576px) {
+    flex: 0;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.9rem;
+  }
 }
 
 .sort__options{
   @include flex(center, space-between);
   flex: 2 1 35rem;
+  
+  @media (max-width: 576px) {
+    margin-top: 1rem;
+    flex: 0;
+  }
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
 }
 
 .sort__option {
@@ -37,6 +57,13 @@
       border-bottom: none;
     }
   }
+  @media (max-width: 576px) {
+    margin-right: 1.5rem;
+  }
 
+  @media (max-width: 400px) {
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+  }
 
 }

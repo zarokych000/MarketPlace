@@ -1,6 +1,24 @@
 .filter{
   width: 100%;
   max-width: 22rem;
+  padding-right: 1rem;
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding-right: 0;
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+
+    position: relative;
+  }
+}
+
+.filter__control {
+  @media (max-width: 767px) {
+  }
 }
 
 .filter__panel{
@@ -12,16 +30,31 @@
   border-radius: 0.3rem;
 
   background: #f7f3ec;
+
+  @media (max-width: 767px) {
+    text-align: center;
+    padding: 1.4rem 0;
+  }
 }
 
 .filter__price {
   padding: 2rem 0;
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
 }
 
 .filter__title {
   font-size: 1.7rem;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    margin-top: 0.8rem;
+
+
+  }
 }
 
 .filter__thumb-wrapper{
@@ -31,6 +64,10 @@
   background: #f7f3ec;
   
   @include flex(center, center);
+
+  @media (max-width: 767px) {
+    margin-top: 0.8rem;
+  }
 }
 
 .filter__range{
@@ -74,6 +111,14 @@
   background: #e5e5e5;
 }
 
+.filter__fabricators {
+  @media (max-width: 767px) {
+    .filter__title {
+      text-align: center;
+    }
+  }
+}
+
 .filter__list{
   list-style: none;
   padding-bottom: 2rem;
@@ -86,6 +131,14 @@
 .filter__power{
   padding: 26px 0 76px 0;
   font-size: 1.5rem;
+
+  @media (max-width: 767px) {
+    padding: 0;
+
+    .filter__title {
+      text-align: center;
+    }
+  }
 }
 
 .filter__show{
@@ -111,5 +164,11 @@
   
   &:focus {
     outline: none;
+  }
+
+  @media (max-width: 767px) {
+    align-self: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
   }
 }

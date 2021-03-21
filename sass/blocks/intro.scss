@@ -24,6 +24,7 @@
 
   @media (max-width: 767px) {
     font-size: 1.4rem;
+    margin-right: 1rem;
   }
 
   @media (max-width: 576px) {
@@ -54,6 +55,10 @@
     width: 20px;
   }
 
+  @media (max-width: 992px) {
+    justify-content: flex-start;
+  }
+
   @media (max-width: 767px) {
     font-size: inherit;
     justify-content: flex-start;
@@ -64,12 +69,15 @@
 
 .intro__phone{
   font-weight: bold;
-  padding-right: 3rem;
+  font-style: italic;
+  padding-right: 2rem;
   color: $red;
   text-decoration: none;
 
   @media (max-width: 992px) {
     padding-right: 0;
+    font-size: 1.7rem;
+    padding-left: 1rem;
   }
 
   @media (max-width: 767px) {

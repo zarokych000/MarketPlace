@@ -118,83 +118,85 @@
                 </div>
             </div>
         </section>
-        <section class="catalog-sidebar catalog-sidebar--wrapper">
-            <div class="container container--sidebar">
+        <section class="catalog-sidebar">
+            <div class="container container--catalog">
                 <aside class="filter">
-                    <div class="filter__panel">Фильтр:</div>
-                    <div class="filter__price">
-                        <h4 class="filter__title">Цена:</h4>
-                        <div class="filter__thumb-wrapper">
-                            <div class="thumb">
-                                <div class="thumb__round thumb__round--right">
-                                    <div class="thumb__dot"></div>
-                                </div>
-                                <div class="thumb__active"></div>
-                                <div class="thumb__round thumb__round--left">
-                                    <div class="thumb__dot"></div>
+                    <div class="filter__control">
+                        <div class="filter__panel">Фильтр:</div>
+                        <div class="filter__price">
+                            <h4 class="filter__title">Цена:</h4>
+                            <div class="filter__thumb-wrapper">
+                                <div class="thumb">
+                                    <div class="thumb__round thumb__round--right">
+                                        <div class="thumb__dot"></div>
+                                    </div>
+                                    <div class="thumb__active"></div>
+                                    <div class="thumb__round thumb__round--left">
+                                        <div class="thumb__dot"></div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="filter__range">
+                                <div class="filter__lower">0</div>
+                                <div class="filter__dash"></div>
+                                <div class="filter__upper">30000</div>
+                            </div>
+                            <div class="filter__divider"></div>
                         </div>
-                        <div class="filter__range">
-                            <div class="filter__lower">0</div>
-                            <div class="filter__dash"></div>
-                            <div class="filter__upper">30000</div>
+                        <div class="filter__fabricators">
+                            <h4 class="filter__title">Производители:</h4>
+                            <ul class="filter__list">
+                                <li class="filter__item">
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox">
+                                        <span class="checkbox__box"></span>
+                                        <span class="checkbox__text">bosch</span>
+                                    </label>
+                                </li>
+                                <li class="filter__item">
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox">
+                                        <span class="checkbox__box"></span>
+                                        <span class="checkbox__text">Makita</span>
+                                    </label>
+                                </li>
+                                <li class="filter__item">
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox">
+                                        <span class="checkbox__box"></span>
+                                        <span class="checkbox__text">Интерскол</span>
+                                    </label>
+                                </li>
+                                <li class="filter__item">
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox">
+                                        <span class="checkbox__box"></span>
+                                        <span class="checkbox__text">Dewalt</span>
+                                    </label>
+                                </li>
+                                <li class="filter__item">
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox">
+                                        <span class="checkbox__box"></span>
+                                        <span class="checkbox__text">Hitachi</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="filter__divider"></div>
                         </div>
-                        <div class="filter__divider"></div>
-                    </div>
-                    <div class="filter__fabricators">
-                        <h4 class="filter__title">Производители:</h4>
-                        <ul class="filter__list">
-                            <li class="filter__item">
-                                <label class="checkbox">
-                                    <input class="checkbox__input" type="checkbox">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">bosch</span>
-                                </label>
-                            </li>
-                            <li class="filter__item">
-                                <label class="checkbox">
-                                    <input class="checkbox__input" type="checkbox">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Makita</span>
-                                </label>
-                            </li>
-                            <li class="filter__item">
-                                <label class="checkbox">
-                                    <input class="checkbox__input" type="checkbox">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Интерскол</span>
-                                </label>
-                            </li>
-                            <li class="filter__item">
-                                <label class="checkbox">
-                                    <input class="checkbox__input" type="checkbox">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Dewalt</span>
-                                </label>
-                            </li>
-                            <li class="filter__item">
-                                <label class="checkbox">
-                                    <input class="checkbox__input" type="checkbox">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Hitachi</span>
-                                </label>
-                            </li>
-                        </ul>
-                        <div class="filter__divider"></div>
-                    </div>
-                    <div class="filter__power">
-                        <div class="filter__title">Питание: </div>
-                        <label class="filter__radio"> 
-                            <input class="radio__input" type="radio" name="radio">
-                            <span class="radio__radiobtn"></span>
-                            Аккумуляторные
-                        </label>
-                        <label class="filter__radio">
-                            <input class="radio__input" type="radio" name="radio">
-                            <span class="radio__radiobtn"></span>     
-                            Сетевые                       
-                        </label>
+                        <div class="filter__power">
+                            <div class="filter__title">Питание: </div>
+                            <label class="filter__radio"> 
+                                <input class="radio__input" type="radio" name="radio">
+                                <span class="radio__radiobtn"></span>
+                                Аккумуляторные
+                            </label>
+                            <label class="filter__radio">
+                                <input class="radio__input" type="radio" name="radio">
+                                <span class="radio__radiobtn"></span>     
+                                Сетевые                       
+                            </label>
+                        </div>
                     </div>
                     <button class="filter__show">
                         Показать
@@ -491,7 +493,7 @@
                 </section>
             </div>
         </section>
-        <article class="tool">
+        <article class="tool" style="display: none;">
             <div class="container">
                 <h3 class="tool__title">Пару слов о перфораторах</h3>
                 <p class="tool__descr">Перфаратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>

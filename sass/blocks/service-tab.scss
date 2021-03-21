@@ -18,6 +18,7 @@
 
 .service-tab__text{
   width: 100%;
+  font-family: "PT Sans";
   max-width: 42rem;
 
   @media (max-width: 576px) {
@@ -27,8 +28,10 @@
   }
 }
 
-.service-tab__text h4{
+
+.service-tab__title {
   font-size: 3.6rem;
+  font-family: Cuprum;
   color: #32425C;
 
   @media (max-width: 776px) {

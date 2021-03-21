@@ -2,6 +2,7 @@
   color: white;
   font-size: 1.4rem;
 
+  font-family: Cuprum;
   background: $red;
   border: none;
 }
@@ -12,7 +13,7 @@
   padding: 1.1rem 2rem;
   background-color: #63a63e;
   border: none;
-  font-size: 1.47rem;
+  font-size: 1.7rem;
   color: white;
   transition: all 0.3s;
 
@@ -44,7 +45,8 @@
   border: none;
   border-radius: 0.3rem;
   background: $red;
-  padding: 0 3rem;
+  padding: 0 5rem;
+  text-transform: uppercase;
 
   transition: background .3s;
 
@@ -69,6 +71,7 @@
   color: white;
   font-size: 1.6rem;
   padding: 1.5rem 3.5rem;
+  text-transform: uppercase;
 
   transition: background .3s;
 
@@ -114,6 +117,7 @@
     width: 100%;
     border-radius: 0.5rem;
     padding: 1.65rem 2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -136,7 +140,7 @@
   }
 
   @media (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 1.1rem 3rem;
   }
 
@@ -145,7 +149,7 @@
   }
 
   @media (max-width: 576px) {
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 1.1rem 1rem;
     margin-top: 2rem;
   }
@@ -216,6 +220,15 @@
   &:active {
     background: darken($color: $red, $amount: 14%);
   }
+
+  @media (max-width: 767px) {
+    margin-top: 10rem;
+  }
+
+  @media (max-width: 576px) {
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .btn__page {
@@ -267,6 +280,10 @@
 
   &:focus {
     outline: none;
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
   }
 }
 
